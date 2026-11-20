@@ -16,3 +16,4 @@ class CalculatorTest {
         assertThrows(IllegalArgumentException.class, () -> calc.divide(1, 0));
     }
 }
+//testcase
