@@ -9,4 +9,13 @@ public class Calculator {
         if (b == 0) throw new IllegalArgumentException("Divide by zero");
         return a / b;
     }
+
+    public int power(int base, int exponent) {
+        if (exponent < 0) throw new IllegalArgumentException("Negative exponent");
+        int result = 1;
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+        return result;
+    }
 }
